@@ -1,0 +1,64 @@
+nav  {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    background-color: rgb(61, 61, 95);
+    color: #EAEAEA;
+}
+
+nav ul {
+    display: flex; 
+    list-style-type: none; 
+    justify-content: space-between;
+    align-items: center;    
+    gap: 2rem;
+}
+
+
+.logo img {
+    height: 3rem; 
+    width: auto;  
+}
+
+
+.hero-section {
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    gap: 2rem;
+    background: linear-gradient(to bottom, rgb(40, 40, 50), rgb(13, 13, 18));
+    color:#EAEAEA;
+}
+
+.hero-texte{
+    flex: 1.5x;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%; /* Makes the image fit perfectly inside its column */
+    max-width: 450px; /* Prevents the image from getting too large on big screens */
+}
+
+p{
+    color: rgb(141, 146, 154);
+}
+
+.bouton{
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: rgb(236,192,135);
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.bouton:hover {
+    background-color: var(rgb(240, 205, 150)); /* Uses your lighter accent color */
+    transform: translateY(-2px); /* Lifts the button slightly */
+    transition: all 0.2s ease; /* Makes the change smooth */
+}
