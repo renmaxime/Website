@@ -1,10 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 nav  {
     display:flex;
     justify-content: flex-start;
     align-items: center;
     gap: 2rem;
     background-color: rgb(61, 61, 95);
-    color: #EAEAEA;
+    color: rgb(179, 182, 186);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    padding-left: 4rem;
+}
+.logo{
+    height: 3rem; 
+    width: auto;  
 }
 
 nav ul {
@@ -12,7 +29,21 @@ nav ul {
     list-style-type: none; 
     justify-content: space-between;
     align-items: center;    
-    gap: 2rem;
+    gap: 2.3rem;
+}
+
+nav a {
+    color: #EAEAEA;
+    text-decoration: none;
+    transition:color 0.3s ease;
+}
+
+nav a:hover {
+    color: rgb(236,192,135); 
+}
+
+header{
+    border-bottom: 1px solid rgb(80, 80, 110);
 }
 
 
@@ -24,15 +55,31 @@ nav ul {
 
 .hero-section {
     display: flex;
-    padding: 2rem;
+    padding:0 2rem;
     align-items: center;
     gap: 2rem;
     background: linear-gradient(to bottom, rgb(40, 40, 50), rgb(13, 13, 18));
     color:#EAEAEA;
+    min-height: calc(100vh - 52px);
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin:0
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  max-width: 600px; 
+  margin-top: 1.5rem;
 }
 
 .hero-texte{
-    flex: 1.5x;
+    flex: 2;
 }
 
 .hero-image {
@@ -58,7 +105,108 @@ p{
 }
 
 .bouton:hover {
-    background-color: var(rgb(240, 205, 150)); /* Uses your lighter accent color */
+    background-color: rgb(240, 205, 150); /* Uses your lighter accent color */
     transform: translateY(-2px); /* Lifts the button slightly */
     transition: all 0.2s ease; /* Makes the change smooth */
+}
+
+
+.features{
+    display: flex  ;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    background-color:#f8f9fa;
+}
+
+.features h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem; 
+}
+
+.feature {
+    flex: 1; 
+    max-width: 350px; 
+    text-align: center;
+}
+
+.feature img {
+    height: 50px; 
+    margin-bottom: 1rem; 
+}
+
+
+.tableau{
+    padding:4rem 2rem;
+    text-align: center;
+    
+}
+.tableau h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem; 
+}
+
+.table{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.table td {
+    padding: 1.2rem 1rem;
+    border: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+.table thead {
+    background-color: #f8f9fa;
+    font-size: 1.1rem;
+}
+
+.table td:nth-child(2), .table td:nth-child(3) {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.table td[colspan="3"] {
+    text-align:center;   
+    font-style: italic;
+    background-color: #f8f9fa;
+}
+
+footer {
+    background-color: #f8f9fa;
+    
+    padding: 2rem;
+    text-align: left;
+}
+
+.container{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+footer {
+    background: linear-gradient(to bottom, rgb(40, 40, 50), rgb(13, 13, 18));
+    color: #EAEAEA;
+    padding: 3rem 2rem;
+    text-align: left;
+}
+
+.footer-links a:link,
+.footer-links a:visited {
+    color: #EAEAEA;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+.footer-links a:hover {
+    text-decoration: underline;
 }
