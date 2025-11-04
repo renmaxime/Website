@@ -7,25 +7,14 @@ body {
     padding: 0;
 }
 
-nav  {
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 2rem;
-    background-color: rgb(61, 61, 95);
-    color: rgb(179, 182, 186);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-right: 2rem;
-    padding-left: 4rem;
-}
+
 .logo{
     height: 3rem; 
     width: auto;  
 }
 
-nav ul {
-    display: flex; 
+nav ul { 
+    display: flex;                   /* P*/
     list-style-type: none; 
     justify-content: space-between;
     align-items: center;    
@@ -58,12 +47,14 @@ header{
     padding:0 2rem;
     align-items: center;
     gap: 2rem;
-    background: linear-gradient(to bottom, rgb(40, 40, 50), rgb(13, 13, 18));
-    color:#EAEAEA;
+    background: linear-gradient(to bottom, rgb(40, 40, 50), rgb(13, 13, 18)); /*J*/
+    color:#EAEAEA;                                                               /*J*/
     min-height: calc(100vh - 52px);
 }
 
-.hero-title {
+
+
+#hero-title {                                        /* I */
     font-size: clamp(2.5rem, 6vw, 5rem);
     font-weight: 800;
     line-height: 1.1;
@@ -117,7 +108,7 @@ p{
     justify-content: center;
     gap: 2rem;
     padding: 4rem 2rem;
-    background-color:#f8f9fa;
+    background-color: white;                              /*J*/
 }
 
 .features h2 {

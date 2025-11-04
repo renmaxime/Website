@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>PocketFlow</title>
-
+    <meta charset="UTF-8">                <!--R-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">          <!--R-->
+    <title>PocketFlow</title>      <!--A-->  
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" href="../images/PocketFlow-favicon.png" type="image/png">
 
-    </head>
+    <style>            /* F */
+        
+        nav  {
+            display:flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 2rem;
+            background-color: rgb(61, 61, 95);
+            color: rgb(179, 182, 186);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-right: 2rem;
+            padding-left: 4rem;
+            }
+    </style>
+
+</head>
+  
 <body>
-    <header>
+    <header>             <!--Q-->
       
         <nav>
           <a href="#" >
-          <img class="logo" src="../images/PocketFlow-logo.png" alt="PocketFlow Logo"/>
+          <img class="logo" src="../images/PocketFlow-logo.png" alt="PocketFlow Logo"/>          <!--H-->  
           </a>
             <ul>
               <li><a href="#">Produits</a></li>
-              <li><a href="#">Tarifs</a></li>
+              <li><a href="#section-features">Tarifs</a></li>                <!--K-->
               <li><a href="#">Solutions</a></li>
               <li><a href="#">Ressources</a></li>
               <li><a href="#">à propos</a></li>
@@ -33,7 +48,7 @@
         
         
           <div class="hero-texte">
-            <h1 class="hero-title">Prenez contrôle de vos dépenses 
+            <h1 id="hero-title">Prenez contrôle de vos dépenses                     <!--I-->  
               <br>
               sans aucun effort.
             </h1>
@@ -42,32 +57,32 @@
           </div>
 
           <div class="hero-image">
-            <img src="../images/hero2-image.png.avif" alt="Hero Image"/>
+            <img src="../images/hero2-image.png.avif" alt="Hero Image"/>              
         
 
         </div>
 
       </section>
 
-      <section class="features">
+      <section class="features" id="section-features">
           <div class="feature">
               <img src="../images/icon1.png" alt="Feature 1"/>
               <h3>Suivi automatique des dépenses</h3>
               <p>Voyez exactement où va votre argent sans saisie manuelle fastidieuse.</p>
           </div>
           <div class="feature">
-              <img src="../images/icon2.png" alt="Feature 2"/>
+              <img src="../images/icon2.png" alt="Feature 2"/>                                                            <!--C-->  
               <h3>Objectifs d'épargne intelligents</h3>
               <p>Fixez-vous un objectif et nous créerons un plan personnalisé pour vous aider à l'atteindre.</p>
           </div>
           <div class="feature">
-              <img src="../images/icon3.png" alt="Feature 3"/>
+              <img src="https://www.iconpacks.net/icons/1/free-chart-icon-646-thumb.png" alt="Feature 3"/>                     <!--C-->  
               <h3>Informations sur les dépenses</h3>
               <p>Recevez des rapports hebdomadaires qui mettent en évidence vos habitudes de dépenses et trouvent des opportunités d'économies.</p>
           </div>
         
-      </section class="tableau">
-        <h2>Trouvez le bon plan pour vous.</h2>
+      </section class="tableau">                    <!--N-->
+        <h2 style="font-style: italic;">Trouvez le bon plan pour vous.</h2>          <!--G-->  
         <table class="table">
           <thead>
             <tr>
@@ -108,21 +123,22 @@
               <td>9,99€/mois</td>
             </tr>
             <tr>
-                  <td colspan="3">Support 24/7 inclus dans tous les plans</td>
-            </tr>
+                  <td colspan="3">Support 24/7 inclus dans tous les plans</td>      <!--N-->
+            </tr> 
         </table>
       </section>
 
-      <footer>
+      <footer>               <!--Q-->
         <h2>Ressources utiles</h2>
         <div class="footer-links">
           <ul>
             <li><a href="#">Contactez-nous</a></li>
             <li><a href="#">politique de confidentialité</a></li>
-            <li><a href="#">Lien CV</a></li>
+            <li><a href="#">Lien CV</a></li>                                     <!--M-->
+            <li><a href="https://www.linkedin.com/in/maxime-ren-6b2582386/">LinkedIn</a></li>         <!--L-->
           </ul>
         </div>
-        <p class="footer-copyright">
+        <p class="font-size: 0.9rem; color: yellow; margin: 0; margin-top: 2rem;">
             © 2025 PocketFlow. Tous droits réservés.
         </p>
       </footer>
